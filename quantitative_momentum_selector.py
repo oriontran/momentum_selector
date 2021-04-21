@@ -28,6 +28,8 @@ def port_input():
 
 # Create csv object using a csv file
 stocks = pd.read_csv('S&P500_Holdings.csv')
+# Optional use of QQQ (NASDAQ) holdings instead of S&P500
+# stocks = pd.read_csv('QQQ_Holdings.csv')
 
 # For future reference: single api call url and the base batch url before modification
 """
