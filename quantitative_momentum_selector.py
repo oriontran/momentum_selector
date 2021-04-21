@@ -17,17 +17,17 @@ def split_tickers(list_tickers, n):
 
 # Function for acquiring portfolio size
 def port_input():
-    # while True:
-    #     try:
-    #         size = float(input("What is the value of your portfolio: "))
-    #         break
-    #     except ValueError:
-    #         print("Invalid number. Please try again.")
-    # return size
-    return 100000
+    while True:
+        try:
+            size = float(input("What is the value of your portfolio: "))
+            break
+        except ValueError:
+            print("Invalid number. Please try again.")
+    return size
+
 
 # Create csv object using a csv file
-stocks = pd.read_csv('starter_stuff/S&P500_Holdings.csv')
+stocks = pd.read_csv('S&P500_Holdings.csv')
 
 # For future reference: single api call url and the base batch url before modification
 """
